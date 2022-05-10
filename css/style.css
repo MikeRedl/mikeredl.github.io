@@ -1,0 +1,131 @@
+:root {
+    --primary-color:        #ffd500;
+    --white-color:          #ffffff;
+    --dark-color:           #010101;
+    --menu-bg-color:        #212529;
+
+    --gray-color:           #909090;
+    --p-color:              #7d7a7a;
+
+    --base-font-family:     "Plain", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-weight-bold:     600;
+    --font-weight-normal:   400;
+    --font-weight-light:    300;
+
+    --h1-font-size:         56px;
+    --h2-font-size:         48px;
+    --h3-font-size:         38px;
+    --h4-font-size:         34px;
+    --h5-font-size:         30px;
+    --h6-font-size:         24px;
+    --p-font-size:          18px;
+    --base-font-size:       16px;
+    --button-font-size:     20px;
+
+    --border-radius-large:  100%;
+    --border-radius-medium: 80px;
+    --border-radius-small:  40px;
+    
+  }
+  html *
+{
+   /*font-size: 1em !important;
+   color: #000 !important;*/
+   font-family: Arial !important;
+}
+  
+  .topnav {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: 100%;
+    height:5%;
+    text-align:center;
+    border-bottom: 1px solid black;
+    position: -webkit-sticky;
+	  position: sticky;
+  	top: 0;
+    
+  }
+  .center{
+    text-align:center;
+    padding-left: 10%;
+    padding-right: 10%;
+   }
+  .inlineblock {
+   display: inline-block;
+   /*height:100%;*/
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+  }  
+  .BackGround {
+    background-color: rgba(72, 234, 255, 0.26);
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+    text-align:center;
+    border-width: 0%;
+   
+  }
+  .vertical-center {
+ 
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    display:block;
+    height:100%;
+    color: #f2f2f2;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #000000;
+   
+  }
+
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #ebebeb;
+    color: rgb(0, 0, 0);
+  }
+  @viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
+  .profilePic{
+    /*width: device-width ;
+    zoom: 1.0 ;*/
+    width:20%;
+  }
+  .heightTen{
+    
+    height:10%;
+
+  }
+
+  .fadein {
+    
+        opacity:0;
+    
+    }
+  .fadein2 {
+    
+      opacity:0;
+  
+  }
+  
+    
