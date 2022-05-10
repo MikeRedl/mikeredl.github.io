@@ -25,43 +25,70 @@
     --border-radius-large:  100%;
     --border-radius-medium: 80px;
     --border-radius-small:  40px;
+    
   }
-
+  html *
+{
+   /*font-size: 1em !important;
+   color: #000 !important;*/
+   font-family: Arial !important;
+}
+  
   .topnav {
-    background-color: #333;
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
     width: 100%;
+    height:5%;
     text-align:center;
+    border-bottom: 1px solid black;
+    position: -webkit-sticky;
+	  position: sticky;
+  	top: 0;
+    
   }
+  .center{
+    text-align:center;
+    padding-left: 10%;
+    padding-right: 10%;
+   }
+  .inlineblock {
+   display: inline-block;
+   /*height:100%;*/
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+  }  
   .BackGround {
-    background-color: rgb(72, 234, 255);
+    background-color: rgba(72, 234, 255, 0.26);
     overflow: hidden;
     width: 100%;
     height:100%;
     text-align:center;
+    border-width: 0%;
+   
   }
-  
+  .vertical-center {
+ 
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
   /* Style the links inside the navigation bar */
   .topnav a {
-    width: 6%;
-    float: left;
+    display:block;
+    height:100%;
     color: #f2f2f2;
-    text-align:center;
-    padding: 14px 16px;
+    padding: 10px 10px;
     text-decoration: none;
     font-size: 17px;
-    margin:auto; 
+    color: #000000;
+   
   }
-  .topnav text {
-    float: left;
-    color: #f2f2f2;
-    text-align:center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    margin:auto; 
-    width:33%;
-  }
+
 
   /* Change the color of links on hover */
   .topnav a:hover {
@@ -71,10 +98,34 @@
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #0099ff;
-    color: white;
+    background-color: #ebebeb;
+    color: rgb(0, 0, 0);
   }
   @viewport {
     width: device-width ;
     zoom: 1.0 ;
   }
+
+  .profilePic{
+    /*width: device-width ;
+    zoom: 1.0 ;*/
+    width:20%;
+  }
+  .heightTen{
+    
+    height:10%;
+
+  }
+
+  .fadein {
+    
+        opacity:0;
+    
+    }
+  .fadein2 {
+    
+      opacity:0;
+  
+  }
+  
+    
