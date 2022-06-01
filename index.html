@@ -1,0 +1,36 @@
+
+<!-- HTML -->
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<nav class="topnav" id="nav">
+<div >
+    <div class="inlineblock height100" style="width:0%;vertical-align: middle"><text style="color:white"></text>></div>
+        <div class="inlineblock height100" id="HomeClick"><a style="vertical-align: bottom;" href="#home">Home</a></div>
+        <div class="inlineblock height100" id="KontaktClick"><a  href="#tech">Kontakt</a></div>
+ </div>
+</nav>
+
+<div class="formular">
+    <h1>Buchungsformular</h1>
+    <form action="https://formsubmit.co/michael.redl@web.de" method="POST" class="formularwidth">
+        <input type="text" name="Name" placeholder="Vorname, Nachname" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <input type="date" name="Datum" placeholder="Datum" required>
+        <textarea name="Nachricht" placeholder="Nachricht" required></textarea>
+        <button type="submit">Absenden</button>
+    </form>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
