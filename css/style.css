@@ -115,13 +115,16 @@ html, body {
     color:rgb(0, 45, 91); 
  
   }
+  .marginLeftRight20{
+    margin-left:20%;
+    margin-right:20%;
+  }
   .myExpertiseGrid{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align:left;
     grid-gap:40px;
-    margin-left:20%;
-    margin-right:20%;
+
   }
   .myExpertiseGridDiv{
      border-radius:10px;
@@ -156,8 +159,7 @@ html, body {
 
   /* Profile section*/
   .profile{
-    margin-left:20%;
-    margin-right:20%;
+    
   }
   .profileGrid{
     display: grid;
@@ -195,8 +197,6 @@ html, body {
   }
 /*About me section*/
 .aboutMe{
-  margin-right:20%;
-  margin-left:20%;
   text-align:center;
 }
   .aboutMe h2{
@@ -266,8 +266,6 @@ ul li {
   grid-template-columns: 1fr;
   text-align:left;
   grid-gap:40px;
-  margin-left:20%;
-  margin-right:20%;
 }
 
 .qualificationDiv{
@@ -308,8 +306,6 @@ ul li {
     grid-template-columns: 1fr 1fr 1fr;
     text-align:left;
     grid-gap:40px;
-    margin-left:20%;
-    margin-right:20%;
   }
   .profileGrid{
     display: grid;
@@ -340,8 +336,6 @@ ul li {
     grid-template-columns: 1fr 1fr;
     text-align:left;
     grid-gap:40px;
-    margin-left:20%;
-    margin-right:20%;
   }
   .aboutMeGrid1{
     display:grid;
@@ -353,13 +347,15 @@ ul li {
   
 }
 @media (max-width: 800px) {
+  .marginLeftRight20{
+    margin-left:5%;
+    margin-right:5%;
+  }
   .myExpertiseGrid{
     display:grid;
     grid-template-columns: 1fr;
     text-align:left;
     grid-gap:40px;
-    margin-left:20%;
-    margin-right:20%;
   }
   .aboutMeGrid1{
     display:grid;
