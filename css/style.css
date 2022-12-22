@@ -114,6 +114,23 @@ html, body {
   .center{
     text-align:center;
   }
+  .contactGrid{
+    display:grid;
+    grid-template-columns: 100px 55px 55px
+
+  }
+  .contactWidth{
+    /*height:200px;*/
+    width:40px;
+
+   /* margin-left:10px*/
+  }
+  .contactWidth:hover{
+    /*height:200px;*/
+    width:45px;
+
+   /* margin-left:10px*/
+  }
 
 /*My Expertise*/
   .section1{
@@ -177,7 +194,7 @@ html, body {
     display: grid;
     grid-template-columns: 55% 45%;
   }
-  .profile img{
+  .profileImg{
     width:100%;
   }
   .profile h1{
@@ -335,7 +352,7 @@ ul li {
    
     text-align:center;
   }
-  .profile img{
+  .profileImg{
     max-width:50%;
   }
   
