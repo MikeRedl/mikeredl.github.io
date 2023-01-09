@@ -336,6 +336,11 @@ ul li {
     text-align:left;
     grid-gap:40px;
   }
+  
+ 
+}
+
+@media (max-width: 1250px) {
   .profileGrid{
     display: grid;
     grid-template-columns: 1fr;
@@ -356,10 +361,8 @@ ul li {
     max-width:50%;
   }
   
- 
-}
 
-@media (max-width: 1250px) {
+
   .myExpertiseGrid{
     display:grid;
     grid-template-columns: 1fr 1fr;
