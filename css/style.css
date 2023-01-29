@@ -56,7 +56,7 @@ html, body {
   }
   
   .topnav {
-    background-color: rgb(253, 245, 245);
+    /*background-color: rgb(253, 245, 245);*/
     /***************background-color: rgb(235, 250, 255);*/
     overflow: hidden;
     width: 100%;
@@ -105,10 +105,12 @@ html, body {
   }
   .backGroundBeige{
     background-color: rgb(254, 250, 250);
+  
     /**************background-color: rgb(242, 248, 250);*/
   }
   .backGroundBeige2{
     background-color: rgb(253, 245, 245);
+    
     /***********background-color: rgb(235, 250, 255);*/
   }
   .center{
@@ -127,14 +129,18 @@ html, body {
   }
   .contactWidth:hover{
     /*height:200px;*/
-    width:45px;
+   /* width:45px;*/
+   opacity: 70%;
 
    /* margin-left:10px*/
   }
 
+  .verticalSpace{
+    height:30px;
+  }
 /*My Expertise*/
   .section1{
-  background-color: rgb(254, 250, 250);
+ /* background-color: rgb(254, 250, 250);*/
   /*********background-color: rgb(242, 248, 250);*/
   }
   .section1 h2{
@@ -157,7 +163,7 @@ html, body {
   }
   .myExpertiseGridDiv{
      border-radius:10px;
-     background-color: rgb(253, 245, 245);
+     /*background-color: rgb(253, 245, 245);*/
     /*********************** background-color: rgb(235, 250, 255);*/
      color:#7d7a7a;
      width:100%;
@@ -302,7 +308,7 @@ ul li {
 
 .qualificationDiv{
   border-radius:10px;
-     background-color: rgb(253, 245, 245);
+     /*background-color: rgb(253, 245, 245);*/
     /*********************** background-color: rgb(235, 250, 255);*/
      color:#7d7a7a;
      width:100%;
@@ -368,6 +374,11 @@ ul li {
   }
   .profileDiv h1{
     font-size:2em;
+  }
+  .contactGrid{
+    display:grid;
+    grid-template-columns: 110px 55px 55px
+
   }
   
 }
