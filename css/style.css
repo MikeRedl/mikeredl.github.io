@@ -649,12 +649,13 @@ ul li {
     z-index: 1;
     top: 0px;
     left: 0px; 
-    background-color: rgb(126, 126, 126);
+    background-color: rgb(253, 245, 245);
+    border-bottom: 1px solid black;
     
   }
   .mobileNav a{
   height: 2em;
-  color: white;
+  color: black;
   }
   .mobileNav a:hover{
     height: 2em;
