@@ -4,9 +4,12 @@ $(document).ready(function () {
 
      let isClicked = false;
 
-
-
-
+     $('#HomeClick2').click(function () {
+          window.scrollTo(0,0);
+     });
+     $('#HomeClick').click(function () {
+          window.scrollTo(0,0);
+     });
      $('#exprt').click(function () {
           document.getElementById('expertiseSection').scrollIntoView({ block: 'start' });
      });
@@ -14,6 +17,15 @@ $(document).ready(function () {
           document.getElementById('experienceSection').scrollIntoView({ block: 'start' });
      });
      $('#qual').click(function () {
+          document.getElementById('qualificationSection').scrollIntoView({ block: 'start' });
+     });
+     $('#exprt2').click(function () {
+          document.getElementById('expertiseSection').scrollIntoView({ block: 'start' });
+     });
+     $('#expr2').click(function () {
+          document.getElementById('experienceSection').scrollIntoView({ block: 'start' });
+     });
+     $('#qual2').click(function () {
           document.getElementById('qualificationSection').scrollIntoView({ block: 'start' });
      });
 
