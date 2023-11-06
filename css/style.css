@@ -225,6 +225,7 @@ background-color: rgb(238, 238, 238);
   padding-right: 10px;
   min-height: 320px;
   /* max-height: 320px;*/
+  box-shadow: 5px 10px 8px 3px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -284,6 +285,7 @@ background-color: rgb(238, 238, 238);
   padding-left: 10px;
   padding-right: 10px;
   hyphens: auto;
+  box-shadow: 5px 10px 8px 3px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -400,6 +402,7 @@ background-color: rgb(238, 238, 238);
   padding-left: 10px;
   padding-right: 10px;
   hyphens: auto;
+  box-shadow: 5px 10px 8px 3px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -454,6 +457,7 @@ ul li {
   padding-right: 10px;
   min-height: 320px;
   max-height: 600px;
+  box-shadow: 5px 10px 8px 3px rgba(0, 0, 0, 0.2);
 }
 
 .qualificationDiv text {
