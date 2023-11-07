@@ -241,6 +241,9 @@ background-color: rgb(238, 238, 238);
   color: #7d7a7a;
   text-align: left;
   hyphens: auto;
+  -webkit-hyphens: auto; /* For Safari and older versions of Chrome */
+  -moz-hyphens: auto;    /* For Firefox */
+  -ms-hyphens: auto;
 }
 
 .projects {
