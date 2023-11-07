@@ -288,6 +288,9 @@ background-color: rgb(238, 238, 238);
   padding-left: 10px;
   padding-right: 10px;
   hyphens: auto;
+  -webkit-hyphens: auto; /* For Safari and older versions of Chrome */
+  -moz-hyphens: auto;    /* For Firefox */
+  -ms-hyphens: auto;
   box-shadow: 5px 10px 8px 3px rgba(0, 0, 0, 0.2);
 
 }
@@ -312,6 +315,9 @@ background-color: rgb(238, 238, 238);
   color: #7d7a7a;
   text-align: left;
   hyphens: auto;
+  -webkit-hyphens: auto; /* For Safari and older versions of Chrome */
+  -moz-hyphens: auto;    /* For Firefox */
+  -ms-hyphens: auto;
 }
 
 
@@ -472,6 +478,9 @@ ul li {
   color: #7d7a7a;
   text-align: center;
   hyphens: auto;
+  -webkit-hyphens: auto; /* For Safari and older versions of Chrome */
+  -moz-hyphens: auto;    /* For Firefox */
+  -ms-hyphens: auto;
 }
 
 .qualificationDiv img {
@@ -602,6 +611,9 @@ ul li {
     padding-left: 10px;
     padding-right: 10px;
     hyphens: auto;
+    -webkit-hyphens: auto; /* For Safari and older versions of Chrome */
+    -moz-hyphens: auto;    /* For Firefox */
+    -ms-hyphens: auto;
 
   }
 
@@ -624,6 +636,9 @@ ul li {
     padding-left: 10px;
     padding-right: 10px;
     hyphens: auto;
+    -webkit-hyphens: auto; /* For Safari and older versions of Chrome */
+    -moz-hyphens: auto;    /* For Firefox */
+    -ms-hyphens: auto;
 
   }
 
