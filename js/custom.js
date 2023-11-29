@@ -18,18 +18,7 @@ $(document).ready(function () {
           },
           body: JSON.stringify(requestData) // Convert the JavaScript object to a JSON string
      })
-          .then(response => {
-               if (!response.ok) {
-                    throw new Error('Network response was not ok ' + response.statusText);
-               }
-               return response.json(); // or `response.text()` if the response is not in JSON format
-          })
-          .then(data => {
-               console.log('Success:', data); // Handle the response data
-          })
-          .catch((error) => {
-               console.error('Error:', error); // Handle any errors
-          });
+      
 
 
    
