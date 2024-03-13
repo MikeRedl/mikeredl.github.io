@@ -49,7 +49,6 @@
         </div>
     </nav>
 
-
     <section class="backGroundBeige2 sectionClass" id="profileSection">
         <div class="verticalSpace"></div>
         <div class="profile marginLeftRight20">
@@ -59,7 +58,8 @@
                         <br>Michael Redl M.Sc.
                     </h1>
                     <text>Vielen Dank für Ihr Interesse an meinen Dienstleistungen
-                        im Microsoft 365-Bereich. Ich stehe frühestens ab <strong>01.03.2024</strong> für neue Projekte zur
+                        im Microsoft 365-Bereich. Ich stehe frühestens ab <strong>01.06.2024</strong> für neue Projekte
+                        zur
                         Verfügung.
                         <br><br> Kontaktieren Sie mich gerne, wenn Sie Interesse an meiner Arbeit oder wenn Sie Fragen
                         haben.<br>
@@ -75,6 +75,7 @@
                             <a href="mailto:michael.redl@web.de">
                                 <button id="contactButton">Kontakt</button>
                             </a>
+                            <!--button id="contactButton" onclick="showContactForm()">Kontakt</button-->
                         </div>
                         <div>
                             <a href="https://de.linkedin.com/in/michael-redl-b79789136">
@@ -92,7 +93,42 @@
                     <img class="profileImg" src="Images/profilepicture.png">
                 </div>
             </div>
+            <!-- Contact Form Modal -->
+            <div id="contactFormModal" class="modal" style="display:none;">
+                <div class="modal-content">
+                    <form id="contactForm">
+                        <label for="subject">Betreff:<span class="required-star">*</span></label>
+                        <input type="text" id="subject" name="subject" required>
+
+                        <label for="description">Anschreiben:<span class="required-star">*</span></label>
+                        <textarea id="description" name="description" required></textarea>
+
+                        <label for="vorname">Vorname:<span class="required-star">*</span></label>
+                        <input type="text" id="vorname" name="vorname" required>
+
+                        <label for="nachname">Nachname:<span class="required-star">*</span></label>
+                        <input type="text" id="nachname" name="nachname" required>
+
+                        <label for="phone">Telefonnummer:<span class="required-star">*</span></label>
+                        <input type="tel" id="phone" name="phone" required pattern="^\+?\d+(\s\d+)*$" title="Telefonnummer">
+
+                        <label for="email">E-Mail:<span class="required-star">*</span></label>
+                        <input type="email" id="email" name="email" required>
+
+                        <div class="form-buttons">
+                            <button type="submit">Absenden</button>
+                            <button type="button" onclick="cancelForm()">Abbrechen</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
+        <div class="thankYouMessageContainer" id="thankYouMessageContainer">
+            <div class="thankYouMessage marginLeftRight20" id="thankYouMessage" style="display: none;">
+                Vielen Dank für Ihre Anfrage!
+            </div>
+        </div>
+
         <div class="verticalSpace"></div>
 
     </section>

@@ -67,3 +67,27 @@ $(document).ready(function () {
 
 
 });
+
+function showContactForm() {
+     document.getElementById('contactForm').reset();
+     document.getElementById('contactFormModal').style.display = 'block';
+ }
+ 
+ function cancelForm() {
+     document.getElementById('contactFormModal').style.display = 'none';
+     document.getElementById('thankYouMessageContainer').style.height = '0px';
+     document.getElementById('thankYouMessage').style.display = 'none';
+ }
+ 
+ document.getElementById('contactForm').onsubmit = function(e) {
+     e.preventDefault(); 
+     submitForm();
+ };
+ 
+ function submitForm() {
+     event.preventDefault();
+     document.getElementById('contactFormModal').style.display = 'none';
+     document.getElementById('thankYouMessageContainer').style.height = '750px';
+     document.getElementById('thankYouMessage').style.display = 'block';
+ }
+ 
