@@ -1,22 +1,18 @@
 
 
 $(document).ready(function () {
-     // Define the URL of your Azure Function
      const functionUrl = 'https://websiteform.azurewebsites.net/api/HttpTrigger1';
 
-     // Define the data you want to send
      const requestData = {
           add: 1
      };
 
-     // Make the HTTP request
      fetch(functionUrl, {
-          method: 'POST', // Assuming your function is expecting a POST request
+          method: 'POST',
           headers: {
                'Content-Type': 'application/json'
-               // If your function requires an API key or authentication, add it here
           },
-          body: JSON.stringify(requestData) // Convert the JavaScript object to a JSON string
+          body: JSON.stringify(requestData)
      })
       
 
@@ -87,6 +83,26 @@ function showContactForm() {
  function submitForm() {
      event.preventDefault();
      document.getElementById('contactFormModal').style.display = 'none';
+     const functionUrl = 'https://websiteform.azurewebsites.net/api/HttpTrigger2';
+
+     const requestData = {
+          Betreff: document.getElementById('subject').value,
+          Anschreiben: document.getElementById('description').value,
+          Vorname: document.getElementById('vorname').value,
+          Nachname: document.getElementById('nachname').value,
+          Telefonnummer: document.getElementById('phone').value,
+          Email: document.getElementById('email').value,
+     };
+
+     fetch(functionUrl, {
+          method: 'POST',
+          headers: {
+               'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(requestData)
+     })
+      
+
      document.getElementById('thankYouMessageContainer').style.height = '750px';
      document.getElementById('thankYouMessage').style.display = 'block';
  }
