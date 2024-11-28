@@ -83,7 +83,7 @@ function showContactForm() {
  function submitForm() {
      event.preventDefault();
      document.getElementById('contactFormModal').style.display = 'none';
-     const functionUrl = 'https://websiteform.azurewebsites.net/api/HttpTrigger2?code=jYkqXtkJtSzTFioNzN0_1c_5xYiLCT8xM119FefWEkNvAzFub7Qn7w==';
+     const functionUrl = 'https://websiteform.azurewebsites.net/api/HttpTrigger2';
      const requestData = {
           Betreff: document.getElementById('subject').value,
           Anschreiben: document.getElementById('description').value,
