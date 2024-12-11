@@ -114,7 +114,7 @@ $(document).ready(function () {
          Nachname: document.getElementById('nachname').value,
          Firma: document.getElementById('firma').value,
          Telefonnummer: document.getElementById('phone').value,
-         Email: document.getElementById('email').value,
+         Mail: document.getElementById('email').value,
      };
  
      fetch(functionUrl2, {
