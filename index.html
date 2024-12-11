@@ -1,425 +1,275 @@
-<!-- HTML -->
+<!DOCTYPE html>
 <html lang="de">
-
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Michael Redl - Microsoft 365 Berater & SharePoint Entwickler</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-
-<body class="backGroundBeige">
-
-
+<body>
     <nav class="topnav" id="nav">
-        <div class="inlineblock">
-            <div class="HamburgerIcon">
-                <div></div>
-                <div></div>
-                <div></div>
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="HamburgerIcon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="desktopNav">
+                    <div class="nav-item" id="HomeClick2"><a href="#home">Home</a></div>
+                    <div class="nav-item" id="exprt2"><a href="#expertiseSection">Expertise</a></div>
+                    <div class="nav-item" id="exprt2"><a href="#projectHistorySection">Projekthistorie</a></div>
+                    <div class="nav-item" id="expr2"><a href="#experienceSection">Berfuserfahrung</a></div>
+                    <div class="nav-item" id="qual2"><a href="#qualificationSection">Qualifikation</a></div>
+                    <div class="nav-item"><a onclick="showContactForm()">Kontakt</a></div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="languageDiv">
+                    <div class="language-item">
+                        <a href="index.html">
+                            <img class="languageImage" src="Images/germanFlag.jpg" alt="Deutsch">
+                        </a>
+                    </div>
+                    <div class="language-item">
+                        <a href="index_eng.html">
+                            <img class="languageImage" src="Images/britishFlag.png" alt="English">
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="mobileNav" style="display: none">
-                <div style="height: 2em"></div>
+                <div class="mobile-nav-spacer"></div>
                 <div id="HomeClick"><a href="#home">Home</a></div>
-                <div id="exprt"><a href="#exp">Expertise</a></div>
-                <div id="expr"> <a href="#edu">Erfahrung</a></div>
-                <div id="qual"> <a href="#edu">Qualifikation</a></div>
-                <div> <a href="mailto:m.redl@michael-redl.com">Kontakt</a></div>
-            </div>
-            <div class="desktopNav">
-                <div class="inlineblock vertical-align "></div>
-                <div class="inlineblock " id="HomeClick2"><a style="vertical-align: bottom;" href="#home">Home</a></div>
-                <div class="inlineblock " id="exprt2"><a href="#exp">Expertise</a></div>
-                <div class="inlineblock " id="expr2"> <a href="#edu">Erfahrung</a></div>
-                <div class="inlineblock " id="qual2"> <a href="#edu">Qualifikation</a></div>
-                <div class="inlineblock "> <a href="mailto:m.redl@michael-redl.com">Kontakt</a></div>
-            </div>
-
-        </div>
-        <div class="languageDiv inlineblock">
-            <div class="inlineblock" style="width:35px">
-                <a href="index.html">
-                    <img href="index.html" class="languageImage" src="Images/germanFlag.jpg">
-                </a>
-            </div>
-            <div class="inlineblock" style="width:35px">
-                <a href="index_eng.html">
-                    <img class="languageImage" src="Images/britishFlag.png">
-                </a>
+                <div id="exprt"><a href="#expertiseSection">Expertise</a></div>
+                <div id="expr"><a href="#projectHistorySection">Projekthistorie</a></div>
+                <div id="expr"><a href="#experienceSection">Berufserfahrung</a></div>
+                <div id="qual"><a href="#qualificationSection">Qualifikation</a></div>
+                <div class="nav-item"><a onclick="showContactForm()">Kontakt</a></div>
             </div>
         </div>
     </nav>
 
-    <section class="backGroundBeige2 sectionClass" id="profileSection">
-        <div class="verticalSpace"></div>
-        <div class="profile marginLeftRight20">
-            <div class="profileGrid">
-                <div class="profileDiv">
-                    <h1><br>Microsoft 365 Berater & SharePoint Entwickler
-                        <br>Michael Redl M.Sc.
-                    </h1>
-                    <text>Herzlich willkommen auf meiner Website!<br><br>
-                        Als selbstständiger SharePoint Entwickler konnte ich bereits viele SharePoint-Projekte für meine
-                        Kunden aus dem DACH Raum erfolgreich umsetzen.
-                        Der Fokus meiner Dienstleistung liegt insbesondere auf:<br>
-                        <ul class="marginBottom">
-                            <li class="boldText">
-                                Der Entwicklung von Webparts im SharePoint & React Framework
-                            </li><br>
-                            <li class="boldText">
-                                Der Entwicklung von Power Apps & Power Automate Flows um Geschäftsprozesse zu
-                                automatisieren
-                            </li><br>
-                            <li class="boldText">
-                                Der Entwicklung von Automatisierungsskripten basierend auf PnP.PowerShell
-                            </li><br>
-                            <br>
-                        </ul>
-                        Falls auch Sie Interesse an meiner Dienstleistung haben, freue ich mich sehr, wenn Sie mit mir Kontakt aufnehmen.
-                         Ansonsten finden Sie weiter unten noch weitere Informationen über meine bisherige
-                        Projekterfahrung.
-                        <br>
-                        <br>
-                        Mit freundlichen Grüßen
-                        <br>
-                        Michael Redl
-                        <br>
-                        <br>
-                    </text>
-                    <br>
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Michael Redl M.Sc.</h1>
+                <h2>Microsoft 365 Berater &amp; SharePoint Entwickler</h2>
+                <p>Herzlich willkommen auf meiner Website! Als selbstständiger SharePoint Entwickler habe ich bereits zahlreiche SharePoint-Projekte im DACH-Raum erfolgreich umgesetzt.</p>
+                <p>Meine Expertise umfasst insbesondere:</p>
+                <ul class="service-list">
+                    <li>Webparts im SharePoint &amp; React Framework</li>
+                    <li>Power Apps &amp; Power Automate zur Prozessautomatisierung</li>
+                    <li>PnP.PowerShell Skripte zur Systemintegration</li>
+                </ul>
+                <p>Wenn Sie Interesse an meiner Dienstleistung haben, freue ich mich auf Ihre Kontaktaufnahme.<br>
+                Weiter unten erfahren Sie mehr über meine Projekterfahrung.</p>
+                <div class="contact-links">
+                    <button class="primary-button" onclick="showContactForm()">Kontakt</button>
 
-                    <div class="contactGrid">
-                        <div>
-                            <a href="mailto:michael.redl@web.de">
-                                <button id="contactButton">Kontakt</button>
-                            </a>
-                            <!--button id="contactButton" onclick="showContactForm()">Kontakt</button-->
-                        </div>
-                        <div>
-                            <a href="https://de.linkedin.com/in/michael-redl-b79789136">
-                                <img class="contactWidth" src="Images/linkedin.png">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.xing.com/profile/Michael_Redl7">
-                                <img class="contactWidth" src="Images/xing.png">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="profileDiv">
-                    <img class="profileImg" src="Images/profilepicture.png">
+                    <a href="https://de.linkedin.com/in/michael-redl-b79789136"><img class="contactIcon" src="Images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.xing.com/profile/Michael_Redl7"><img class="contactIcon" src="Images/xing.png" alt="Xing"></a>
                 </div>
             </div>
-            <!-- Contact Form Modal -->
-            <div id="contactFormModal" class="modal" style="display:none;">
-                <div class="modal-content">
-                    <form id="contactForm">
-                        <label for="subject">Betreff:<span class="required-star">*</span></label>
-                        <input type="text" id="subject" name="subject" required>
-
-                        <label for="description">Anschreiben:<span class="required-star">*</span></label>
-                        <textarea id="description" name="description" required></textarea>
-
-                        <label for="vorname">Vorname:<span class="required-star">*</span></label>
-                        <input type="text" id="vorname" name="vorname" required>
-
-                        <label for="nachname">Nachname:<span class="required-star">*</span></label>
-                        <input type="text" id="nachname" name="nachname" required>
-
-                        <label for="phone">Telefonnummer:<span class="required-star">*</span></label>
-                        <input type="tel" id="phone" name="phone" required pattern="^\+?\d+(\s\d+)*$" title="Telefonnummer">
-
-                        <label for="email">E-Mail:<span class="required-star">*</span></label>
-                        <input type="email" id="email" name="email" required>
-
-                        <div class="form-buttons">
-                            <button type="submit">Absenden</button>
-                            <button type="button" onclick="cancelForm()">Abbrechen</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="thankYouMessageContainer" id="thankYouMessageContainer">
-            <div class="thankYouMessage marginLeftRight20" id="thankYouMessage" style="display: none;">
-                Vielen Dank für Ihre Anfrage!
-            </div>
-        </div>
-
-        <div class="verticalSpace"></div>
-
-    </section>
-    <section class="section1">
-        <div id="expertiseSection">
-            <h2><br>Expertise</h2>
-            <div class="myExpertiseGrid marginLeftRight20">
-                <div class="myExpertiseGridDiv backGroundBeige2">
-                    <div class="center"><img style="height:15%; margin-top:20px" src="Images/Nintex.png"></div><br>
-                    <text>Entwicklung von Nintex Workflows oder Migration von Nintex Workflows in die Nintex Workflow
-                        Cloud</text>
-                </div>
-                <div class="myExpertiseGridDiv backGroundBeige2">
-                    <div class="center"><img style="margin-top:10px" src="Images/PowerAutomate.png"></div><br>
-                    <text>Entwicklung von Power Automate Flows und Automatisierungslösungen auf Basis der MS Power
-                        Platform</text>
-                </div>
-                <div class="myExpertiseGridDiv backGroundBeige2">
-                    <div class="center"><img style="margin-top:10px" src="Images/PowerApps2.png"></div><br>
-                    <text>Entwicklung von Power Apps auf Basis der MS Power Platform</text>
-                </div>
-                <div class="myExpertiseGridDiv backGroundBeige2">
-                    <div class="center"><img style="margin-top:10px" src="Images/PnPPowerShell.png"></div><br>
-                    <text>Erstellung von PnP PowerShell Skripten, beispielsweise zur Erstellung von Schnittstellen
-                        zwischen SharePoint und Drittsystemen wie SAP oder MS SQL Datenbanken</text>
-                </div>
-                <div class="myExpertiseGridDiv backGroundBeige2">
-                    <div class="center"><img style="margin-top:10px" src="Images/Spfx.png"></div><br>
-                    <text>Entwicklung von SharePoint Apps im SharePoint Framework. Beispiel: News Webparts mit
-                        Kommentarfunktion</text>
-                </div>
-                <div class="myExpertiseGridDiv backGroundBeige2">
-                    <div class="center"><img style="margin-top:10px" src="Images/ShrePoint.png"></div><br>
-                    <text>Migration von SharePoint On-Premise zu SharePoint Online sowie Entwicklung & Administration
-                        von SharePoint als Social Intranet Lösung</text>
-                </div>
-                <div class="myExpertiseGridDiv backGroundBeige2">
-                    <div class="center"><img style="margin-top:10px" src="Images/HtmlJavascriptCss.png"></div><br>
-                    <text>Web-Entwicklung im SharePoint Umfeld unter Zuhilfenahme der gängigen Web-Technologien wie
-                        HTML, JavaScript, TypeScript, CSS</text>
-                </div>
-                <div class="myExpertiseGridDiv backGroundBeige2">
-                    <div class="center"><img style="height:150% " src="Images/react.png"></div><br>
-                    <text>Entwicklung von Webanwendungen im React Framework, insbesondere Webparts in
-                        Verbindung mit der Microsoft 365-Welt</text>
-
-                </div>
+            <div class="hero-image">
+                <img class="profileImg" src="Images/profilepicture.png" alt="Profilbild Michael Redl">
             </div>
         </div>
     </section>
-    <section class="backgroundBeige2">
-        <div class="projects marginLeftRight20">
-            <h2><br>Projekthistorie</h2>
-            <div class="projectsGrid">
-                <div class="projectsGridDiv">
 
+    <!-- Contact Form Modal -->
+    <div id="overlay" class="overlay"></div>
+    <div id="contactFormModal" class="modal">
+        <div class="modal-content">
+            <h3>Kontaktformular</h3>
+            <form id="contactForm">
+                <label for="subject">Betreff:<span class="required-star">*</span></label>
+                <input type="text" id="subject" name="subject" required>
 
-                    <br>
-                    <div class="center" style="align-items:center"><img src="Images/EnviriaLogo.png"></div>
+                <label for="description">Anschreiben:<span class="required-star">*</span></label>
+                <textarea id="description" name="description" required></textarea>
 
-                    <h3>Enviria Energy GmbH<br>(03/2024 - 10/2024)<br></h3>
-                    <ul>
-                        <li>
-                            Entwicklung eines automatischen Provisionierungssystems inklusive Lifecycle Management für die Anlage von Projektseiten auf Basis von AWS Lambda Functions
-                            und PnP.PowerShell Skripten.
-                        </li><br>
-                        <li>
-                            Entwicklung einer Schnittstelle zwischen PipeDrive und SharePoint Online, um Daten aus neuen Deals automatisch zu synchronisieren
-                        </li><br>
-                        <li>
-                            Entwicklung von SharePoint Online Webparts im SPFx & React Framework
-                        </li><br>
-                        <br>
-                    </ul>
+                <label for="vorname">Vorname:<span class="required-star">*</span></label>
+                <input type="text" id="vorname" name="vorname" required>
+
+                <label for="nachname">Nachname:<span class="required-star">*</span></label>
+                <input type="text" id="nachname" name="nachname" required>
+
+                <label for="firma">Firma:<span class="required-star">*</span></label>
+                <input type="text" id="firma" name="firma" required>
+
+                <label for="phone">Telefonnummer:<span class="required-star">*</span></label>
+                <input type="tel" id="phone" name="phone" required pattern="^\+?\d+(\s\d+)*$" title="Telefonnummer">
+
+                <label for="email">E-Mail:<span class="required-star">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <div class="form-buttons">
+                    <button type="submit">Absenden</button>
+                    <button type="button" onclick="cancelForm()">Abbrechen</button>
                 </div>
-                <div class="projectsGridDiv">
-
-
-                    <br>
-                    <div class="center" style="align-items:center"><img src="Images/DCCS.PNG"></div>
-
-                    <h3>DCCS GmbH<br>(06/2023 - 12/2024)<br></h3>
-                    <ul>
-                        <li>
-                            Entwicklung eines automatischen Provisionierungssystems für die Anlage von SharePoint Seiten
-                            und Teams auf Basis von Azure Function Apps und Azure Logic Apps
-                        </li><br>
-                        <li>
-                            Entwicklung von SharePoint 2019 / SharePoint Online Webparts und Extensions im SPFx & React Framework
-                        </li><br>
-                        <li>
-                            Entwicklung von von Automatisierungslösungen basierend auf Power Automate und Power Apps
-                        </li><br>
-                        <br>
-                    </ul>
-                </div>
-
-                <div class="projectsGridDiv">
-
-
-                    <br>
-                    <div class="center" style="align-items:center"><img src="Images/sailerstahlbau.png"></div>
-
-                    <h3>SAILER STAHLBAU GmbH<br>(08/2023 - 11/2023)<br></h3>
-                    <ul>
-                        <li>
-                            Beratung zur Einführung von Microsoft 365 hinsichtlich Funktionsumfang, Preise & Lizenzen
-                        </li><br>
-                        <li>
-                            Entwicklung eines Aufgabenplaners auf Basis von Power Apps und Power Automate
-                        </li><br>
-                        <br>
-                    </ul>
-                </div>
-
-                <div class="projectsGridDiv">
-
-
-                    <br>
-                    <div class="center" style="align-items:center"><img src="Images/RDS.jpg"></div>
-
-                    <h3>RDS Consulting GmbH<br>(03/2023 - 06/2023)<br></h3>
-                    <ul>
-                        <li>
-                            Ablösung einer Lotus Notes Datenbank durch SharePoint Online und SharePoint 2019
-                        </li><br>
-                        <li>
-                            Entwicklung von Power Apps und Power Automate Flows zur Automatisierung von
-                            Geschäftsprozessen
-                        </li><br>
-                        <br>
-                    </ul>
-                </div>
-                <div class="projectsGridDiv">
-
-
-                    <br>
-                    <div class="center" style="align-items:center"><img src="Images/iwis.png"></div>
-
-                    <h3>iwis SE & Co. KG <br>(Seit 03/2023)<br></h3>
-                    <ul>
-                        <li>
-                            Entwicklung von Power BI Dashboards zur Auswertung von SharePoint Daten und zur Berechnung
-                            von Key Performance Indicators (KPIs)
-                        </li><br>
-                        <li>
-                            Entwicklung von Power Automate Flows und Power Apps zur Automatisierung von
-                            Geschäftsprozessen
-                        </li><br>
-                        <li>
-                            Beratung des Microsoft 365 Teams und Wissenstransfer auf neue Mitarbeiter
-                        </li>
-                        <br>
-                        <br>
-                    </ul>
-                </div>
-            </div>
-            <div class="verticalSpace"></div>
+            </form>
         </div>
+    </div>
 
+    <div class="thankYouMessageContainer" id="thankYouMessageContainer">
+        <div class="thankYouMessage" id="thankYouMessage">
+            Vielen Dank für Ihre Anfrage! Ich werde mich zeitnah mit Ihnen in Verbindung setzen.
+        </div>
+    </div>
+
+    <section id="expertiseSection" class="section section-light">
+        <h3 class="section-heading">Expertise</h3>
+        <div class="myExpertiseGrid">
+            <div class="myExpertiseGridDiv">
+                <div class="center">
+                    <img src="Images/Nintex.png" alt="Nintex">
+                </div>
+                <p>Nintex Workflows &amp; Migration in die Nintex Workflow Cloud</p>
+            </div>
+            <div class="myExpertiseGridDiv">
+                <div class="center">
+                    <img src="Images/PowerAutomate.png" alt="Power Automate">
+                </div>
+                <p>Power Automate Flows &amp; Automatisierungslösungen auf der MS Power Platform</p>
+            </div>
+            <div class="myExpertiseGridDiv">
+                <div class="center">
+                    <img src="Images/PowerApps2.png" alt="Power Apps">
+                </div>
+                <p>Power Apps Entwicklung auf der MS Power Platform</p>
+            </div>
+            <div class="myExpertiseGridDiv">
+                <div class="center">
+                    <img src="Images/PnPPowerShell.png" alt="PnP PowerShell">
+                </div>
+                <p>PnP PowerShell Skripte zur Anbindung externer Systeme</p>
+            </div>
+            <div class="myExpertiseGridDiv">
+                <div class="center">
+                    <img src="Images/Spfx.png" alt="SPFx">
+                </div>
+                <p>SharePoint Framework (SPFx) Webparts &amp; Extensions</p>
+            </div>
+            <div class="myExpertiseGridDiv">
+                <div class="center">
+                    <img src="Images/ShrePoint.png" alt="SharePoint">
+                </div>
+                <p>Migration zu SharePoint Online &amp; Social Intranet Lösungen</p>
+            </div>
+            <div class="myExpertiseGridDiv">
+                <div class="center">
+                    <img src="Images/HtmlJavascriptCss.png" alt="HTML/CSS/JS">
+                </div>
+                <p>Web-Entwicklung mit HTML, JavaScript, TypeScript &amp; CSS</p>
+            </div>
+            <div class="myExpertiseGridDiv">
+                <div class="center">
+                    <img src="Images/react.png" alt="React">
+                </div>
+                <p>React Webanwendungen für Microsoft 365</p>
+            </div>
+        </div>
     </section>
-    <section class="backGroundBeige" id="experienceSection">
-        <div class="aboutMe marginLeftRight20">
-            <h2><br>Berufserfahrung</h2>
-            <div class="aboutMeGrid1">
-                <div class="aboutMeGrid1div backGroundBeige2">
-                    <br>
-                    <div class="center"><img src="Images/smeg.png"></div>
-                    <br>
-                    <h3>Smeg Deutschland GmbH <br>(2018-2021)<br></h3><br>
 
-                    <ul>
-                        <li>
-                            Client- und Server-Administration <br>(Windows Server 2012 R2)
-                        </li><br><br><br>
-                        <li>
-                            IT-Support im First- und Second Level
-                        </li><br><br><br>
-                        <li>
-                            Einführung von Microsoft 365 & Anbindung an die bestehende IT Systemlandschaft
-                        </li><br><br><br>
-                        <li>
-                            Entwicklung einer VBA Lösung für den Vertrieb, um Kundendaten automatisch zu erfassen
-                        </li>
-                    </ul>
-                </div>
-                <div class="aboutMeGrid1div backGroundBeige2">
-                    <br>
-                    <div class="center"><img src="Images/bvk.png"></div>
-                    <br>
-                    <h3>Bayerische Versorgungskammer <br>(2021-2022)</h3><br>
-
-                    <ul>
-                        <li>
-                            Softwareentwicklung innerhalb der SharePoint Umgebung mit HTML5, JavaScript, CSS
-                            und dem ASP.NET & jQuery Framework
-                        </li><br><br><br>
-                        <li>
-                            Erstellung von Skripten mit dem PnP PowerShell Module zur Anbindung des SharePoints
-                            an Drittsysteme wie SAP
-                        </li><br><br><br>
-                        <li>
-                            Entwicklung von SharePoint-2010/2013 Workflows zur Automatisierung von
-                            Geschäftsprozessen für über 1400 Mitarbeiter
-                        </li><br><br><br>
-                        <li>
-                            Entwicklung & Administration von SharePoint 2016 On-Premise als eine Social-Intranet
-                            Lösung
-                        </li>
-                    </ul>
-                </div>
-                <div class="aboutMeGrid1div backGroundBeige2">
-                    <br>
-                    <div class="center"><img src="Images/iwis.png"></div>
-                    <br>
-                    <h3>iwis SE & Co. KG <br>(2022-2023)<br></h3>
-                    <br>
-                    <ul>
-                        <li>
-                            Erarbeitung eines Microsoft 365 Governance Konzepts
-                        </li><br><br><br>
-                        <li>
-                            Migration von SharePoint 2013 nach SharePoint Online via ShareGate
-                        </li><br><br><br>
-                        <li>
-                            Entwicklung von Nintex / Power Automate Workflows / Power App Lösungen zur
-                            Automatisierung von Geschäftsprozessen für über 2000 Mitarbeiter
-                        </li><br><br><br>
-                        <li>
-                            Einführung der Nintex Workflow Cloud und Migration von bestehenden Workflows
-                        </li><br><br><br>
-                        <li>
-                            Administration von Microsoft 365 inklusive SharePoint Online, MS Teams und Azure AD
-                        </li>
-                    </ul>
-                </div>
+    <section class="section section-white" id="projectHistorySection" >
+        <h3 class="section-heading">Projekthistorie</h3>
+        <div class="projectsGrid">
+            <div class="projectsGridDiv">
+                <div class="center"><img src="Images/EnviriaLogo.png" alt="Enviria"></div>
+                <h4>Enviria Energy GmbH (03/2024 - 10/2024)</h4>
+                <ul>
+                    <li>Provisionierungssystem + Lifecycle Management (AWS Lambda, PnP.PowerShell)</li>
+                    <li>Schnittstelle PipeDrive &lt;-> SharePoint Online</li>
+                    <li>SPFx &amp; React Webparts</li>
+                </ul>
+            </div>
+            <div class="projectsGridDiv">
+                <div class="center"><img src="Images/DCCS.PNG" alt="DCCS"></div>
+                <h4>DCCS GmbH (Seit 06/2023)</h4>
+                <ul>
+                    <li>Automatisches Provisionieren von SharePoint &amp; Teams (Azure Functions, Logic Apps)</li>
+                    <li>SPFx &amp; React Webparts &amp; Extensions</li>
+                    <li>Power Automate &amp; Power Apps Lösungen</li>
+                </ul>
+            </div>
+            <div class="projectsGridDiv">
+                <div class="center"><img src="Images/sailerstahlbau.png" alt="Sailer Stahlbau"></div>
+                <h4>SAILER STAHLBAU GmbH (08/2023 - 11/2023)</h4>
+                <ul>
+                    <li>Microsoft 365 Beratung (Funktionen, Preise, Lizenzen)</li>
+                    <li>Aufgabenplaner mit Power Apps &amp; Power Automate</li>
+                </ul>
+            </div>
+            <div class="projectsGridDiv">
+                <div class="center"><img src="Images/RDS.jpg" alt="RDS Consulting"></div>
+                <h4>RDS Consulting GmbH (03/2023 - 06/2023)</h4>
+                <ul>
+                    <li>Migration von Lotus Notes DB zu SharePoint Online &amp; On-Prem</li>
+                    <li>Power Apps &amp; Automate für Prozessautomatisierung</li>
+                </ul>
+            </div>
+            <div class="projectsGridDiv">
+                <div class="center"><img src="Images/iwis.png" alt="iwis"></div>
+                <h4>iwis SE &amp; Co. KG (Seit 03/2023)</h4>
+                <ul>
+                    <li>Power BI Dashboards &amp; KPIs auf SharePoint-Daten</li>
+                    <li>Power Automate &amp; Power Apps für Geschäftsprozesse</li>
+                    <li>Beratung &amp; Wissenstransfer an Microsoft 365 Team</li>
+                </ul>
             </div>
         </div>
-        <div class="verticalSpace"></div>
     </section>
-    <section class="section1 backGroundBeige2" id="qualificationSection">
-        <div>
-            <h2><br>Qualifikation</h2>
-            <div class="qualificationGrid marginLeftRight20">
-                <div class="qualificationDiv backGroundBeige">
-                    <br>
-                    <div class="center"><img src="Images/LMU.png"></div>
-                    <br>
-                    <br>
-                    <h3>LUDWIG MAXIMILIANS UNIVERSITÄT<br></h3>
-                    <br>
-                    <text>Master of Science in Physik</text>
-                    <br>
-                    <br>
 
-                </div>
+    <section id="experienceSection" class="section section-light">
+        <h3 class="section-heading">Berufserfahrung</h3>
+        <div class="aboutMeGrid1">
+            <div class="aboutMeGrid1div">
+                <div class="center"><img src="Images/smeg.png" alt="Smeg Deutschland"></div>
+                <h4>Smeg Deutschland GmbH (2018-2021)</h4>
+                <ul>
+                    <li>Client/Server-Administration (Windows Server 2012 R2)</li>
+                    <li>IT-Support (First- &amp; Second Level)</li>
+                    <li>Einführung von Microsoft 365 &amp; Integration in bestehende IT-Landschaft</li>
+                    <li>VBA-Lösung zur automatischen Kundendatenerfassung</li>
+                </ul>
+            </div>
+            <div class="aboutMeGrid1div">
+                <div class="center"><img src="Images/bvk.png" alt="Bayerische Versorgungskammer"></div>
+                <h4>Bayerische Versorgungskammer (2021-2022)</h4>
+                <ul>
+                    <li>SharePoint Entwicklung (HTML5, JS, CSS, ASP.NET, jQuery)</li>
+                    <li>PnP PowerShell Skripte für SAP-Anbindung</li>
+                    <li>Workflows (SP 2010/2013) zur Prozessautomatisierung</li>
+                    <li>Social Intranet auf SharePoint 2016 On-Premise</li>
+                </ul>
+            </div>
+            <div class="aboutMeGrid1div">
+                <div class="center"><img src="Images/iwis.png" alt="iwis"></div>
+                <h4>iwis SE &amp; Co. KG (2022-2023)</h4>
+                <ul>
+                    <li>Microsoft 365 Governance Konzept</li>
+                    <li>Migration SP 2013 -> SP Online mit ShareGate</li>
+                    <li>Nintex/Power Automate Workflows &amp; Power Apps für 2000+ MA</li>
+                    <li>Nintex Workflow Cloud Einführung &amp; Migration</li>
+                    <li>Administration von Microsoft 365 (SP Online, MS Teams, Azure AD)</li>
+                </ul>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br>
+    </section>
+
+    <section id="qualificationSection" class="section section-white">
+        <h3 class="section-heading">Qualifikation</h3>
+        <div class="qualificationGrid">
+            <div class="qualificationDiv">
+                <div class="center"><img src="Images/LMU.png" alt="LMU"></div>
+                <h4>LUDWIG MAXIMILIANS UNIVERSITÄT</h4>
+                <p>Master of Science in Physik</p>
+            </div>
+        </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/custom.js"></script>
 </body>
-
 </html>
